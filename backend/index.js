@@ -24,10 +24,10 @@ app.listen(PORT, async () => {
   //mongoDB connection
   try {
     await mongoose.connect(MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      useNewUrlParser: false,
+      useUnifiedTopology: false,
       useFindAndModify: false,
-      useCreateIndex: true,
+      useCreateIndex: false,
     });
     console.log("MongoDB connected!🔥");
   } catch (error) {
