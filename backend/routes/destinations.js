@@ -71,10 +71,10 @@ router.post(
       destination.description = req.body.description;
       destination.image = req.body.image;
 
-      await destination.save();
+      await destination.save(update);
       res.json({ success: "Record Successfully Updated!" });
     } catch (error) {
-      res.json({ error: "Couldn't update the Record!" });
+      res.json({ error: "The record cannot be fetched!" });
     }
   }
 ); //update destination record
