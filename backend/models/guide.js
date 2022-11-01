@@ -30,14 +30,7 @@ const guideSchema = new mongoose.Schema({
         require: true
         
     }, 
-    availability:{
-        type:String,
-        default: 'Available',
-        require: true
-    },
-    imgLink:{
-        type:String,
-    }
+
     
 
 });
